@@ -7,15 +7,15 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            var Shapess = new Shape[]
+            var shapes = new Shape[]
             {
                 new Circle(5),
                 new Triangle(2, 3, 4)
             };
 
-            foreach (var Shapes in Shapess)
+            foreach (var shape in shapes)
             {
-                Console.WriteLine($"Area of {Shapes.GetType().Name} : {Shapes.Area()}");
+                Console.WriteLine($"Area of {shape.GetType().Name} : {shape.Area()}");
              }
         }
     }
